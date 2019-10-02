@@ -1,8 +1,17 @@
 {
   "name": "bamizon",
   "version": "1.0.0",
-  "description": "Manager View (Next Level) Assignment!",
+  "description": "bamazon app",
   "main": "bamizon.js",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "cli-table2": "^0.2.0",
+    "express": "^4.17.1",
+    "get-port": "^5.0.0",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.3"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,21 +19,10 @@
     "type": "git",
     "url": "git+https://github.com/Gravehaus/bamizon.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Gravehaus/bamizon/issues"
   },
-  "homepage": "https://github.com/Gravehaus/bamizon#readme",
-  "dependencies": {
-    "cli-table": "^0.3.1",
-    "cli-table2": "^0.2.0",
-    "express": "^4.17.1",
-    "get-port": "^5.0.0",
-    "mysql": "^2.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.3"
-  }
+  "homepage": "https://github.com/Gravehaus/bamizon#readme"
 }

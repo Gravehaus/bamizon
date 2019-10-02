@@ -33,7 +33,7 @@ var displayForUser = function() {
   });
 }
 
-// Prompt user to enter id and quantity they wish to purchase
+// TELLS THE USER TO PICK SOMETHING BY ITEM ID
 var purchaseItem = function() {
   console.log('\n  ');
   inquirer.prompt([{
@@ -47,7 +47,7 @@ var purchaseItem = function() {
     message: " Enter the quantity you want to purchase",
 
   }]).then(function(answer) {
-    // Query the database for info about the item including the quantity currently in stock.
+    // ASKS THE DB IF SOMETHING IS IN STOCK, AND HOW MANY.
     connection.query('SELECT ProductName, DepartmentName, Price, StockQuantity FROM products WHERE ?', {ItemID: answer.id}, function(err,res) {
 
       console.log('\n  You would like to buy ' + answer.quantity + ' ' + res[0].ProductName + ' ' + res[0].DepartmentName + ' at $' + res[0].Price + ' each'
@@ -67,9 +67,9 @@ var purchaseItem = function() {
         customerPrompt();
 
       } else {
-        //If not enought inventory notify customer and prompt customer for desire to shop more
+        //IF ITEM IS UNAVAILABLE, THIS MESSAGE GENERATES
         console.log('\n  Sorry, Insufficient quantity to fulfill your order!\n');
-        // Order not completed
+        // ORDER CANNOT BE COMPLETED.
         customerPrompt();
       }
     })
