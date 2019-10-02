@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-const Table = require('cli-table2');
+const Table = require('cli-table');
 const inquirer = require('inquirer');
 
 
@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
-  password: '', //your mysql workbench password goes here
+  password: 'heavyrain41590!', //your mysql workbench password goes here
   database:  'bamazon'
 });
 

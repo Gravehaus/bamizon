@@ -6,7 +6,7 @@
 // const port = process.env.PORT || 3306 ;
 // console.log('Server is running on port: ' + port);
 
-Table = require('cli-table2');
+Table = require('cli-table');
 const displayTable = function() {
 
   this.table = new Table({
@@ -15,9 +15,11 @@ const displayTable = function() {
 
   this.displayInventoryTable = function(results) {
     this.results = results;
-    for (var i=0; i <this.results.length; i++) {
+    for (let i=0; i <this.results.length; i++) {
       this.table.push(
         [this.results[i].ItemID, this.results[i].ProductName, '$'+ this.results[i].Price, this.results[i].StockQuantity] );
+
+      //WHY IS THIS NOT WORKING///
     }
     console.log('\n' + this.table.toString());
   };
