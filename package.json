@@ -1,13 +1,14 @@
 {
   "name": "bamizon",
   "version": "1.0.0",
-  "description": "bamazon app",
-  "main": "bamizon.js",
+  "description": "bamizon",
+  "main": "bamazonCustomer.js",
   "dependencies": {
     "cli-table": "^0.3.1",
     "cli-table2": "^0.2.0",
     "express": "^4.17.1",
     "get-port": "^5.0.0",
+    "inquirer": "^7.0.0",
     "mysql": "^2.17.1",
     "nodemon": "^1.19.3"
   },
@@ -19,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/Gravehaus/bamizon.git"
   },
-  "author": "",
+  "author": "Julia Graves",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Gravehaus/bamizon/issues"

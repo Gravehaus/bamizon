@@ -3,8 +3,11 @@
 //USE npm install cli-table2 FOR TABLE GENERATION
 //MORE INFORMATION ON CLI-TABLES: https://www.npmjs.com/package/cli-table2
 
+// const port = process.env.PORT || 3306 ;
+// console.log('Server is running on port: ' + port);
+
 Table = require('cli-table2');
-var displayTable = function() {
+const displayTable = function() {
 
   this.table = new Table({
     head: ['Item ID', 'Product Name', 'Price', 'Stock Quantity'],

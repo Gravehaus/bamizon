@@ -1,14 +1,14 @@
-var mysql = require('mysql');
-var Table = require('cli-table2');
-var inquirer = require('inquirer');
+const mysql = require('mysql');
+const Table = require('cli-table2');
+const inquirer = require('inquirer');
 
 
 //USE npm install cli-table FOR NODE ACCESS
 //MORE INFORMATION ON CLI-TABLES: https://www.npmjs.com/package/cli-table
 
-var displayTable = require('./constructorDisplay.js');
+const displayTable = require('./constructorDisplay.js');
 
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
@@ -18,7 +18,7 @@ var connection = mysql.createConnection({
 
 connection.connect(function (err) {
   if (err) {
-    console.log('Error connectig to Db');
+    console.log('Error connecting to Db');
     throw err;
   }
 });
@@ -34,7 +34,7 @@ var displayForUser = function() {
 }
 
 // TELLS THE USER TO PICK SOMETHING BY ITEM ID
-var purchaseItem = function() {
+const purchaseItem = function() {
   console.log('\n  ');
   inquirer.prompt([{
     name: "id",
@@ -53,7 +53,7 @@ var purchaseItem = function() {
       console.log('\n  You would like to buy ' + answer.quantity + ' ' + res[0].ProductName + ' ' + res[0].DepartmentName + ' at $' + res[0].Price + ' each'
       );
       if (res[0].StockQuantity >= answer.quantity) {
-        var itemQuantity = res[0].StockQuantity - answer.quantity;
+        const itemQuantity = res[0].StockQuantity - answer.quantity;
         connection.query("UPDATE products SET ? WHERE ?", [
           {
             StockQuantity: itemQuantity
@@ -61,7 +61,7 @@ var purchaseItem = function() {
             ItemID: answer.id
           }], function(err,res) {
         });
-        var cost = res[0].Price * answer.quantity;
+        const cost = res[0].Price * answer.quantity;
         console.log('\n  Order fulfilled! Your cost is $' + cost.toFixed(2) + '\n');
         // Order completed
         customerPrompt();
@@ -76,7 +76,7 @@ var purchaseItem = function() {
   });
 }
 
-var customerPrompt = function() {
+const customerPrompt = function() {
   inquirer.prompt({
     name: "action",
     type: "list",
