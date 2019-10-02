@@ -23,9 +23,19 @@ When the terminal has loaded the customer (i.e. you) will be prompted to:
 <br>
 The user then chooses an ID number (1 through 10)
 <br>
-The list will then populate:
+The list will then populate with itemID, item, Department, Price and Stock Quantity:
 <br>
 <img width="876" alt="Screen Shot 2019-10-02 at 4 02 34 PM" src="https://user-images.githubusercontent.com/54043578/66087953-2ac01b00-e52e-11e9-9698-75be12fd96e3.png">
+
+
+
+DEPLOYED
+<br>
+https://gravehaus.github.io/bamizon/
+
+GITHUB PAGE
+<br>
+https://github.com/Gravehaus/bamizon.git
 
 
 
