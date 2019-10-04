@@ -26,6 +26,11 @@ The user then chooses an ID number (1 through 10)
 The list will then populate with itemID, item, Department, Price and Stock Quantity:
 <br>
 <img width="876" alt="Screen Shot 2019-10-02 at 4 02 34 PM" src="https://user-images.githubusercontent.com/54043578/66087953-2ac01b00-e52e-11e9-9698-75be12fd96e3.png">
+<br>
+This is an image of the Database used.
+<img width="1133" alt="MySql_db" src="https://user-images.githubusercontent.com/54043578/66235067-1736c080-e6a4-11e9-97a8-5bf9d2173e49.png">
+
+
 
 
 
