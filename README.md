@@ -20,8 +20,6 @@ Second, When the REPO is cloned, type in the terminal/bash command:
 <br>
 ![giphy](https://user-images.githubusercontent.com/54043578/66235733-9ed0ff00-e6a5-11e9-9c6b-28649e36d5f9.gif)
 
-<iframe src="https://giphy.com/embed/kDewBZSwMyZWykfEBw" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/code-kDewBZSwMyZWykfEBw">via GIPHY</a></p>
-
 <br>
 'node bamazonCustomer.js' (Do not include quotes)
 <br>
