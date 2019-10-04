@@ -16,7 +16,10 @@ First, clone the app from github, https://github.com/Gravehaus/bamizon.git
 Second, When the REPO is cloned, type in the terminal/bash command: 
 <br>
 (This is what the code will look like:
-https://media.giphy.com/media/kDewBZSwMyZWykfEBw/source.mp4
+
+<br>
+![giphy](https://user-images.githubusercontent.com/54043578/66235733-9ed0ff00-e6a5-11e9-9c6b-28649e36d5f9.gif)
+
 <br>
 'node bamazonCustomer.js' (Do not include quotes)
 <br>
