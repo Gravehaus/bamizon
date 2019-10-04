@@ -58,8 +58,8 @@ function buyItem() {
           name: "choice",
           type: "rawlist",
           choices: function() {
-            var choiceArray = [];
-            for (var i = 0; i < results.length; i++) {
+            let choiceArray = [];
+            for (let i = 0; i < results.length; i++) {
               choiceArray.push(results[i].ProductName);
             }
             return choiceArray;
@@ -74,28 +74,28 @@ function buyItem() {
       ])
       .then(function(answer) {
         // get the information of the chosen item
-        var chosenItem;
-        for (var i = 0; i < results.length; i++) {
+        let chosenItem;
+        for (let i = 0; i < results.length; i++) {
           if (results[i].ProductName === answer.choice) {
             chosenItem = results[i];
           }
         }
 
         // determine if stock is enough
-        if (chosenItem.StockQuantity < parseInt(answer.StockQuantity)) {
+        if (chosenItem.StockQuantity > parseInt(answer.stock)) {
           // bid was high enough, so update db, let the user know, and start over
           connection.query(
             "UPDATE products SET StockQuantity = StockQuantity -  ? WHERE ?",
             [
-              answer.StockQuantity,
+              answer.stock,
               {
-                id: chosenItem.id
+                ItemID: chosenItem.ItemID
               }
             ],
             function(error) {
               if (error) throw err;
               console.log("Item has been added to cart.");
-              console.log("Thank you for your purchase! Your total is " + "$" + parseInt(answer.StockQuantity) * chosenItem.Price);
+              console.log("Thank you for your purchase! Your total is " + "$" + parseInt(answer.stock) * chosenItem.Price);
               start();
             }
           );
