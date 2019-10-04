@@ -15,23 +15,29 @@ First, clone the app from github, https://github.com/Gravehaus/bamizon.git
 <br>
 Second, When the REPO is cloned, type in the terminal/bash command: 
 <br>
-(This is what the code will look like:
-
+(This is what the code will look like:)
+<br>
 <br>
 ![giphy](https://user-images.githubusercontent.com/54043578/66235733-9ed0ff00-e6a5-11e9-9c6b-28649e36d5f9.gif)
-
+<br>
 <br>
 'node bamazonCustomer.js' (Do not include quotes)
 <br>
+<br>
 When the terminal has loaded the customer (i.e. you) will be prompted to:
+<br>
 <br>
 "Enter the Item ID of the product you want to purchase "
 <br>
+<br>
 The user then chooses an ID number (1 through 10)
+<br>
 <br>
 The list will then populate with itemID, item, Department, Price and Stock Quantity:
 <br>
+<br>
 <img width="876" alt="Screen Shot 2019-10-02 at 4 02 34 PM" src="https://user-images.githubusercontent.com/54043578/66087953-2ac01b00-e52e-11e9-9698-75be12fd96e3.png">
+<br>
 <br>
 This is an image of the Database used.
 <img width="1133" alt="MySql_db" src="https://user-images.githubusercontent.com/54043578/66235067-1736c080-e6a4-11e9-97a8-5bf9d2173e49.png">
