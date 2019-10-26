@@ -66,6 +66,8 @@ IF THE USER SUCCESSFULLY ORDERS AN INSTOCK AMOUNT, THE USER WILL BE GREETED WITH
 <img width="1440" alt="Screen Shot 2019-10-26 at 1 13 37 PM" src="https://user-images.githubusercontent.com/54043578/67625393-9a09f180-f7f2-11e9-9671-aba50a2b0eca.png">
 IF THE USER CHOOSES AN ITEM THATS NOT IN STOCK, THE USER WILL NOT BE ABLE TO PURCHASE.
 
+<br>
+When the user is done. They can simply EXIT the program and it will terminate the node function.
 
 
 
