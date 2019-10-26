@@ -56,6 +56,16 @@ THE USER WILL THEN BE PROMPTED WITH A SALES GENERATED BOARD THAT WILL PROMPT THE
 SELECT 'PURCHASE' TO CONTINUE.
 <img width="1440" alt="bam7" src="https://user-images.githubusercontent.com/54043578/67625258-8a89a900-f7f0-11e9-9a9d-163ae92a0b4f.png">
 THE USER CAN NOW SELECT FROM AN ARRAY OF ITEMS. 1-10. THE USER CAN USE THE 'UP' OR 'DOWN' ARROW KEYS TO NAVIGATE, OR, THEY CAN TYPE A NUMBER.
+<img width="1440" alt="BAM8" src="https://user-images.githubusercontent.com/54043578/67625344-d2f59680-f7f1-11e9-8443-c90d6e97d7f1.png">
+<img width="1440" alt="bam9" src="https://user-images.githubusercontent.com/54043578/67625349-e6086680-f7f1-11e9-853d-53384d8a2430.png">
+IT WILL THEN ASK THE USER HOW MANY ITEMS THE USER WOULD LIKE TO BUY
+<img width="1440" alt="Screen Shot 2019-10-26 at 12 54 07 PM" src="https://user-images.githubusercontent.com/54043578/67625353-edc80b00-f7f1-11e9-9fa3-0e52846e1ce1.png">
+THE USER THEN SELECTS A NUMBER AND PRESSES ENTER.
+<img width="1440" alt="Screen Shot 2019-10-26 at 12 54 41 PM" src="https://user-images.githubusercontent.com/54043578/67625391-92e2e380-f7f2-11e9-82e9-8ac67384f390.png">
+IF THE USER SUCCESSFULLY ORDERS AN INSTOCK AMOUNT, THE USER WILL BE GREETED WITH A THANK YOU
+<img width="1440" alt="Screen Shot 2019-10-26 at 1 13 37 PM" src="https://user-images.githubusercontent.com/54043578/67625393-9a09f180-f7f2-11e9-9671-aba50a2b0eca.png">
+IF THE USER CHOOSES AN ITEM THATS NOT IN STOCK, THE USER WILL NOT BE ABLE TO PURCHASE.
+
 
 
 
